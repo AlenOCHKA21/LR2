@@ -1,0 +1,19 @@
+def Three(list):
+    two = []
+    three = []
+    five = []
+    for i in range (len(list)):
+        if list[i]%2 == 0:
+            two.append(list[i])
+        if list[i]%3 == 0:
+            three.append(list[i])
+        if list[i]%5 == 0:
+            five.append(list[i])
+    return (two, three, five)
+n = int(input("Введите кол-во чисел: "))
+list = []
+print("Введите числа: ")
+for i in range (0,n,1):
+    list.append(int(input()))
+    
+print(Three(list)) 
