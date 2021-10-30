@@ -1,0 +1,13 @@
+def palindrome(x):
+   y = x
+   a = 0
+   while(x > 0):
+       b = x % 10
+       a = a * 10 + b
+       x = x // 10
+   if (y == a):
+       return True
+   else:
+       return False 
+x = int(input("Enter number: "))
+print(f" Palindrome? { palindrome(x)}")
