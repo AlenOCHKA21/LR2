@@ -1,0 +1,12 @@
+def Reverse(x):
+    b = str(abs(x))
+    if x < 0 :
+        c = "-"
+    else :
+        c = ""
+    for i in range (len(b) - 1, -1, -1):
+        c = c + b[i]
+    return (int(c))
+
+x = int(input('Число: '))
+print(f'Число, обратное этому: {Reverse(x)}') 
