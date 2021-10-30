@@ -1,0 +1,11 @@
+def Check(x):
+    if x>0 and x<100000:
+        for i in range (2, x):
+            if (x % i == 0):
+              return "false"
+        return "true"
+    else:
+        print("ошибка, введите число еще раз")
+
+x = int(input("Введите число: "))
+print(Check(x))
